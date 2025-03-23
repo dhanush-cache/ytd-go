@@ -1,9 +1,11 @@
 from enum import Enum
+import os
 from pathlib import Path
 
 from platformdirs import user_cache_dir
 
-HOME = Path.home()
+ON_ANDROID = "ANDROID_STORAGE" in os.environ
+HOME = Path("/sdcard") if ON_ANDROID else Path.home()
 TARGET = HOME / "YouTube Videos"
 MUSIC = HOME / "Music"
 CACHE_DIR = Path(user_cache_dir("ytd-go"))
