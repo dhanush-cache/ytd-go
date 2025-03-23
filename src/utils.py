@@ -1,10 +1,12 @@
 import hashlib
+import json
 from pathlib import Path
 from typing import List
+
 import yt_dlp
 
-from src.configs import CACHE_DIR, MUSIC, TARGET, ContentType, Formats, format_mappings
-import json
+from src.configs import (CACHE_DIR, MUSIC, TARGET, ContentType, Formats,
+                         format_mappings)
 
 
 def get_cache_file(url):

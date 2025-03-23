@@ -1,7 +1,7 @@
 from enum import Enum
 from pathlib import Path
-from platformdirs import user_cache_dir
 
+from platformdirs import user_cache_dir
 
 HOME = Path.home()
 TARGET = HOME / "YouTube Videos"

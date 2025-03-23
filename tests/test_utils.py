@@ -1,7 +1,9 @@
-import pytest
 from unittest.mock import patch
-from src.utils import get_content_type
+
+import pytest
+
 from src.configs import ContentType
+from src.utils import get_content_type
 
 
 @pytest.mark.parametrize(
