@@ -5,6 +5,7 @@ name = "pypi"
 
 [packages]
 yt-dlp = "*"
+platformdirs = "*"
 
 [dev-packages]
 black = "*"
