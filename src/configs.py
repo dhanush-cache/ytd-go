@@ -1,5 +1,5 @@
-from enum import Enum
 import os
+from enum import Enum
 from pathlib import Path
 
 from platformdirs import user_cache_dir
@@ -30,5 +30,5 @@ format_mappings = {
     "1080p": ["137", "248", "bestvideo"],
     "720p": ["136", "247", "bestvideo"],
     "480p": ["135", "244", "bestvideo"],
-    "audio": ["140", "251", "140-1", "140-drc", "251-drc", "bestaudio"],
+    "audio": ["bestaudio[ext=m4a]", "bestaudio"],
 }
